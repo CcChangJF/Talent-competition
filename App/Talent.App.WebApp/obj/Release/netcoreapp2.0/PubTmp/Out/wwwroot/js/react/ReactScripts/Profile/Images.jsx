@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import Cookies from 'js-cookie';
+import { profileUrl } from '../Config';
 export class Images extends React.Component {
 
     constructor(props) {
@@ -27,9 +28,10 @@ export class Images extends React.Component {
     loadImages(Id) {
 
         var cookies = Cookies.get('talentAuthToken');
-
+        let link = profileUrl + "/profile/profile/getEmployerProfileImage/?id=" + Id;
         $.ajax({
-            url: 'http://localhost:60290/profile/profile/getEmployerProfileImage/?id=' + Id,
+            //url: 'http://localhost:60290/profile/profile/getEmployerProfileImage/?id=' + Id,
+            url: link,
             headers: {
                 'Authorization': 'Bearer ' + cookies,
                 'Content-Type': 'application/json'
@@ -45,7 +47,8 @@ export class Images extends React.Component {
 
                 if (res.employerProfile.length > 0) {
                     for (var i = 0; i < res.employerProfile.length; i++) {
-                        imageSrcArr.push("http://localhost:60290/profile/profile/getEmployerProfileImages/?Id=" + res.employerProfile[i].fileName);
+                        //imageSrcArr.push("http://localhost:60290/profile/profile/getEmployerProfileImages/?Id=" + res.employerProfile[i].fileName);
+                        imageSrcArr.push(profileUrl + "/profile/profile/getEmployerProfileImages/?Id=" + res.employerProfile[i].fileName);
                         imageIdArr.push(res.employerProfile[i].id);
                         selectedFileArr.push("");
                     }

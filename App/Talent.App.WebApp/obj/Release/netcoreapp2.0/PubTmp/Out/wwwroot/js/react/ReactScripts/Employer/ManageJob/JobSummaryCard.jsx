@@ -25,7 +25,6 @@ export class JobSummaryCard extends React.Component {
         let isExpire = ("" != expiryDate && moment(new Date()).isSameOrBefore(expiryDate)) ? false : true;
         return (
             <Card className="job-summary-card" fluid>
-                
                 <Card.Content>
                     <Label as="a" color="black" ribbon="right">
                         <Icon name="user"></Icon>
@@ -43,14 +42,12 @@ export class JobSummaryCard extends React.Component {
                                     color={isExpire ? "red" : "grey"}>Expired</Button>
                             </div>
                             <div className="ui column">
-                                <Button.Group fluid size="tiny">
-                                    <Button><Icon name="dont"></Icon>Close</Button>
-                                    <Button><Icon name="edit"></Icon>Edit</Button>
-                                    <Button><Icon name="copy"></Icon>Copy</Button>
-                                </Button.Group>
+                                <ButtonGroup fluid size="tiny">
+                                    <Button onClick={this.props.closeFunction}><Icon name="dont"></Icon>Close</Button>
+                                    <Button onClick={this.props.editFunction} ><Icon name="edit"></Icon>Edit </Button>
+                                    <Button onClick={this.props.copyFunction} ><Icon name="copy"></Icon>Copy </Button>
+                                </ButtonGroup>
                             </div>
-                            <div className="ui column"></div>
-                            <div className="ui column"></div>
                         </div>
                     </div>
                 </Card.Content>

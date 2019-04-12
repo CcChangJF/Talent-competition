@@ -6,6 +6,7 @@ import { userNavigation } from './UserNavigation.jsx'
 import { FormErrors } from '../Form/FormErrors.jsx'
 import Cookies from 'js-cookie'
 import { EmailVerification } from './EmailVerification.jsx';
+import { authUrl } from '../Config.js';
 
 export default class LoginForm extends React.Component {
     constructor(props) {
@@ -87,9 +88,11 @@ export default class LoginForm extends React.Component {
             email: this.state.email,
             password: this.state.password
         }
-
+        let link = authUrl + '/authentication/authentication/signin';
+        //let link = 'https://talentappwebapp20190411022913.azurewebsites.net:60998/authentication/authentication/signin';
         $.ajax({
-            url: 'http://localhost:60998/authentication/authentication/signin',
+            //url: 'http://localhost:60998/authentication/authentication/signin',
+            url: link,
             type: 'POST',
             data: JSON.stringify(loginModel),
             contentType: 'application/json',

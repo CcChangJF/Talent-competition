@@ -9,3 +9,4 @@ C:\Workspace\VSProject\CompetitionTask\talent-competition\App\Talent.App.WebApp\
 C:\Workspace\VSProject\CompetitionTask\talent-competition\App\Talent.App.WebApp\obj\Release\netcoreapp2.0\Talent.App.WebApp.AssemblyInfo.cs
 C:\Workspace\VSProject\CompetitionTask\talent-competition\App\Talent.App.WebApp\obj\Release\netcoreapp2.0\Talent.App.WebApp.dll
 C:\Workspace\VSProject\CompetitionTask\talent-competition\App\Talent.App.WebApp\obj\Release\netcoreapp2.0\Talent.App.WebApp.pdb
+C:\Workspace\VSProject\CompetitionTask\talent-competition\App\Talent.App.WebApp\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs

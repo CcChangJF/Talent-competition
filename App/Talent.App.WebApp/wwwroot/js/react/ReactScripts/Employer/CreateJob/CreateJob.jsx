@@ -12,6 +12,7 @@ import { ChildSingleInput } from '../../Form/SingleInput.jsx'
 import { JobDescription } from './JobDescription.jsx';
 import { JobSummary } from './JobSummary.jsx';
 import { BodyWrapper, loaderData } from '../../Layout/BodyWrapper.jsx';
+import { talentUrl } from '../../Config.js';
 
 export default class CreateJob extends React.Component {
     constructor(props) {
@@ -66,8 +67,11 @@ export default class CreateJob extends React.Component {
         var copyJobParam = this.props.match.params.copyId ? this.props.match.params.copyId : "";
 
         if (param != "" || copyJobParam != "") {
-            var link = param != "" ? 'http://localhost:51689/listing/listing/GetJobByToEdit?id=' + param
-                : 'http://localhost:51689/listing/listing/GetJobForCopy?id=' + copyJobParam;
+            //var link = param != "" ? 'http://localhost:51689/listing/listing/GetJobByToEdit?id=' + param
+            //    : 'http://localhost:51689/listing/listing/GetJobForCopy?id=' + copyJobParam;http://localhost:51689
+            var link = param != "" ? '/listing/listing/GetJobByToEdit?id=' + param
+                : '/listing/listing/GetJobForCopy?id=' + copyJobParam; http://localhost:51689
+            link = talentUrl + link;
             var cookies = Cookies.get('talentAuthToken');
             $.ajax({
                 url: link,
@@ -99,8 +103,10 @@ export default class CreateJob extends React.Component {
         //jobData.jobDetails.startDate = jobData.jobDetails.startDate.toDate();
         console.log("date:", jobData.jobDetails.startDate);
         var cookies = Cookies.get('talentAuthToken');   
+        let link = talentUrl + "/listing/listing / createUpdateJob";
         $.ajax({
-            url: 'http://localhost:51689/listing/listing/createUpdateJob',
+            //url: 'http://localhost:51689/listing/listing/createUpdateJob',
+            url: link,
             headers: {
                 'Authorization': 'Bearer ' + cookies,
                 'Content-Type': 'application/json'

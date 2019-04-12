@@ -1,0 +1,15 @@
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\bin\Release\netcoreapp2.0\Talent.Services.Identity.deps.json
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\bin\Release\netcoreapp2.0\Talent.Services.Identity.runtimeconfig.json
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\bin\Release\netcoreapp2.0\Talent.Services.Identity.runtimeconfig.dev.json
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\bin\Release\netcoreapp2.0\Talent.Services.Identity.dll
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\bin\Release\netcoreapp2.0\Talent.Services.Identity.pdb
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\bin\Release\netcoreapp2.0\Talent.Common.dll
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\bin\Release\netcoreapp2.0\Talent.Common.pdb
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\obj\Release\netcoreapp2.0\Talent.Services.Identity.csprojAssemblyReference.cache
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\obj\Release\netcoreapp2.0\Talent.Services.Identity.csproj.CoreCompileInputs.cache
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\obj\Release\netcoreapp2.0\Talent.Services.Identity.AssemblyInfoInputs.cache
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\obj\Release\netcoreapp2.0\Talent.Services.Identity.AssemblyInfo.cs
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\obj\Release\netcoreapp2.0\Talent.Services.Identity.csproj.CopyComplete
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\obj\Release\netcoreapp2.0\Talent.Services.Identity.dll
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\obj\Release\netcoreapp2.0\Talent.Services.Identity.pdb
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Services.Identity\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs

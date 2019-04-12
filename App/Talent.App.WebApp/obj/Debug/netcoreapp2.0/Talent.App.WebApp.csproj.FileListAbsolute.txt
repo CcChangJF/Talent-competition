@@ -42,3 +42,4 @@ C:\Workspace\VSProject\CompetitionTask\talent-competition\App\Talent.App.WebApp\
 C:\Workspace\VSProject\CompetitionTask\talent-competition\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talent.App.WebApp.csproj.CoreCompileInputs.cache
 C:\Workspace\VSProject\CompetitionTask\talent-competition\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talent.App.WebApp.AssemblyInfoInputs.cache
 C:\Workspace\VSProject\CompetitionTask\talent-competition\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\Talent.App.WebApp.AssemblyInfo.cs
+C:\Workspace\VSProject\CompetitionTask\talent-competition\App\Talent.App.WebApp\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

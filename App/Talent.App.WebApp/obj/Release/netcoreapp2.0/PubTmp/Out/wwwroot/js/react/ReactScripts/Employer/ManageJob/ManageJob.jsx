@@ -7,6 +7,7 @@ import { JobSummaryCard } from './JobSummaryCard.jsx';
 import { BodyWrapper, loaderData } from '../../Layout/BodyWrapper.jsx';
 import { Pagination, Icon, Dropdown, Checkbox, Accordion, Form, Segment, Card } from 'semantic-ui-react';
 import CreateJob from '../CreateJob/CreateJob.jsx';
+import { defaultUrl, talentUrl } from '../../Config.js';
 
 export default class ManageJob extends React.Component {
     constructor(props) {
@@ -40,6 +41,9 @@ export default class ManageJob extends React.Component {
         this.loadNewData = this.loadNewData.bind(this);
         this.updateWithoutSave = this.updateWithoutSave.bind(this);
         this.handPageChange = this.handPageChange.bind(this);
+        this.editFunction = this.editFunction.bind(this);
+        this.closeFunction = this.closeFunction.bind(this);
+        this.copyFunction = this.copyFunction.bind(this);
     };
 
     init() {
@@ -61,7 +65,6 @@ export default class ManageJob extends React.Component {
     };
 
     loadData(callback) {
-        var link = 'http://localhost:51689/listing/listing/getSortedEmployerJobs';
         var cookies = Cookies.get('talentAuthToken');
         var params = {
             activePage: this.state.activePage,
@@ -74,6 +77,7 @@ export default class ManageJob extends React.Component {
             limit: this.state.limit
         }
         // your ajax call and other logic goes here
+        var link = talentUrl + '/listing/listing/getSortedEmployerJobs';
         $.ajax({
             url: link,
             headers: {
@@ -129,6 +133,18 @@ export default class ManageJob extends React.Component {
         }
     }
 
+    editFunction() {
+        alert("edit here");
+    }
+
+    closeFunction() {
+        alert("close here");
+    }
+
+    copyFunction() {
+        alert("copy here");
+    }
+
     updateJobSummaryCards() {
         let summaryCard = null;
         let jobsData = this.state.loadJobs;
@@ -137,7 +153,8 @@ export default class ManageJob extends React.Component {
                 <JobSummaryCard
                     details={job}
                     editFunction={this.editFunction}
-                    closeFunction={this.closeFunction}>
+                    closeFunction={this.closeFunction}
+                    copyFunction={this.copyFunction}>
                 </JobSummaryCard>
             );
         }
@@ -155,6 +172,12 @@ export default class ManageJob extends React.Component {
     render() {
         let summaryCards = (this.state.hasData) ? 
             this.state.jobSummaryCards : (<p>No Jobs Found.</p>);
+        let filters = Object.keys(this.state.filter);
+        let filterOptions = filters.map(item =>
+            ({ key: item, value: item, text: item.charAt(0).toUpperCase() + item.slice(1) }));
+        let sortOptions = [
+            {key: 0, value: "desc", text: "Newest first"},
+            {key: 1, value: "asc",  text: "Oldest first"}];
 
         return (
             <BodyWrapper reload={this.init} loaderData={this.state.loaderData}>
@@ -166,11 +189,13 @@ export default class ManageJob extends React.Component {
                         <div className="ui row sixteen column">
                             <Icon name="filter" /> Filter &nbsp; &nbsp;
                             <Dropdown
-                                placeholder="Choose Filter" /> &nbsp; &nbsp;
+                                placeholder="Choose Filter"
+                                options={ filterOptions } /> &nbsp; &nbsp;
                             <Icon name="calendar alternate" /> &nbsp;
                                     Sort by date: &nbsp;&nbsp;
                             <Dropdown
-                                placeholder="Newest first" />
+                                placeholder="Newest first"
+                                options={sortOptions} />
                         </div>
                         <div className="ui row sixteen column">
                                 {summaryCards}

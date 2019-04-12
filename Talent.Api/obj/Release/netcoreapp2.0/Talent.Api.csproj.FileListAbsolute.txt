@@ -1,0 +1,15 @@
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\bin\Release\netcoreapp2.0\Talent.Api.deps.json
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\bin\Release\netcoreapp2.0\Talent.Api.runtimeconfig.json
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\bin\Release\netcoreapp2.0\Talent.Api.runtimeconfig.dev.json
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\bin\Release\netcoreapp2.0\Talent.Api.dll
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\bin\Release\netcoreapp2.0\Talent.Api.pdb
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\bin\Release\netcoreapp2.0\Talent.Common.dll
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\bin\Release\netcoreapp2.0\Talent.Common.pdb
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\obj\Release\netcoreapp2.0\Talent.Api.csprojAssemblyReference.cache
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\obj\Release\netcoreapp2.0\Talent.Api.csproj.CoreCompileInputs.cache
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\obj\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\obj\Release\netcoreapp2.0\Talent.Api.AssemblyInfoInputs.cache
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\obj\Release\netcoreapp2.0\Talent.Api.AssemblyInfo.cs
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\obj\Release\netcoreapp2.0\Talent.Api.csproj.CopyComplete
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\obj\Release\netcoreapp2.0\Talent.Api.dll
+C:\Workspace\VSProject\CompetitionTask\talent-competition\Talent.Api\obj\Release\netcoreapp2.0\Talent.Api.pdb
